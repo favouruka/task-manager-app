@@ -28,7 +28,7 @@ function displayTasks() {
         let li = document.createElement("li");
         li.innerHTML = \`\${task.title} - Due: \${task.dueDate} - Priority: \${task.priority} 
                         <button onclick="markCompleted(\${index})">✔</button> 
-                        <button onclick="deleteTask(\${index})">❌</button>\`;
+                        <button onclick="deleteTask(\${index})">X</button>\`;
         if (task.completed) {
             li.classList.add("completed");
         }
